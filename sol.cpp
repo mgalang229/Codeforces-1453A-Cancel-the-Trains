@@ -22,12 +22,12 @@ void solve() {
 	int cnt=0;
 	//there will be two conditions
 	if(n<m) {
-		//if n is less than m, then we iterate in set b while checking if it's in a
+		//if n is less than m, then we iterate in set 'b' while checking if it's in 'a'
 		for(auto x : b)
 			if(a.find(x)!=a.end())
 				cnt++;
 	} else {
-		//if n is greater than m, then we iterate in set a while checking if it's in b
+		//if n is greater than m, then we iterate in set 'a' while checking if it's in 'b'
 		for(auto x : a)
 			if(b.find(x)!=b.end())
 				cnt++;
